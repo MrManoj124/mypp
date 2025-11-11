@@ -6,6 +6,9 @@ import {validateEmail, checkPasswordStrength} from '../../Utils/Validation';
 import '../CssFiles/RegisterForm.css';
 
 function RegisterForm(){
+    const navigate = useState();
+    const {login} = useContext(AuthContext);
+    
     const[formData, setFormData]=useState({
         name:'',
         email:'',
