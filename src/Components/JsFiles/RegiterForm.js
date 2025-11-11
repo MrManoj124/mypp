@@ -5,7 +5,7 @@ import {registerUser, googleLogin, facebookLogin} from '../../Services/Api';
 import {validateEmail, checkPasswordStrength} from '../../Utils/Validation';
 import '../CssFiles/RegisterForm.css';
 
-function RegisterForm({onSwithToLogin}){
+function RegisterForm(){
     const[formData, setFormData]=useState({
         name:'',
         email:'',
