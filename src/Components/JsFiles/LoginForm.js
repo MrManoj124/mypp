@@ -4,8 +4,6 @@ import { AuthContext } from "../../Context/AuthContext";
 import {loginUser, googleLogin, facebookLogin} from '../../Services/Api';
 import {validateEmail} from '../../Utils/Validation';
 import { useNavigate } from "react-router-dom";
-import '../../Services/Api';
-import '../../Utils/Validation';
 
 
 function LoginForm(){

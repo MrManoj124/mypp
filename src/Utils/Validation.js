@@ -1,7 +1,8 @@
-export const validateEmail = (email)=>{
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+export const validateEmail = (email) => {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
 };
+
 
 export const checkPasswordStrength = (password)=>{
     if(password.length === 0)return '';

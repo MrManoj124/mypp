@@ -3,11 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthContext';
 import { registerUser, googleLogin, facebookLogin } from '../services/api';
 import { validateEmail, checkPasswordStrength } from '../utils/validation';
-import './Register.css';
-import '../../Services/Api';
-import '../../Utils/Validation';
+import '../CssFiles/RegisterForm.css';
 
-export default function Register() {
+export default function RegisterForm() {
   const navigate = useNavigate();
   const { login } = useContext(AuthContext);
   
