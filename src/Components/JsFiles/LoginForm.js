@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import '../CssFiles/LoginForm.css';
-import {AuthContext} from 'react-router-dom';
+import { AuthContext } from "../../Context/AuthContext";
 import {loginUser, googleLogin, facebookLogin} from '../../Services/Api';
 import {validateEmail} from '../../Utils/Validation';
 import { useNavigate } from "react-router-dom";
