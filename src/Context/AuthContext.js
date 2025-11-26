@@ -1,6 +1,5 @@
 import {createContext, useState, useEffect} from 'react';
 
-export const AuthContext = createContext();
 
 export const AuthContext=createContext();
 
@@ -13,19 +12,18 @@ export const AuthProvider=({children})=>{
   useEffect(()=>{
     const initAuth=async()=>{
         const savedToken=localStorage.getItem('token');
-        if(savedToken){
-            try{    
+        if(savedToken){   
                 setToken(savedToken);
                 setIsAuthenticated(true);
-            }
+        }
             setLoading(false);
         };
         initAuth();
     },[]);
 
-    const login=(userData, authToken)=>{    
+    const login=(userData, userToken)=>{    
         setUser(userData);
-        setToken(authToken);
+        setToken(userToken);
         setIsAuthenticated(true);
         localStorage.setItem('token', userToken);
     };
