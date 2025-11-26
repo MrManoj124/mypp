@@ -1,8 +1,8 @@
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthContext';
-import { registerUser, googleLogin, facebookLogin } from '../services/api';
-import { validateEmail, checkPasswordStrength } from '../utils/validation';
+import { registerUser, googleLogin, facebookLogin } from '../../Services/Api';
+import { validateEmail, checkPasswordStrength } from '../../Utils/Validation';
 import '../CssFiles/RegisterForm.css';
 
 export default function RegisterForm() {
